@@ -1,0 +1,25 @@
+.navBarStyle {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    cursor: pointer;
+}
+.myLogo {
+    height: 5em;
+    border-radius: 20%;
+}
+.navLink{
+    display: flex;
+    gap: 1.5em;
+    font-size: 1.2em;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color:white;
+}
+
+a:hover {
+    color: #a5a3a3
+}

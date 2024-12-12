@@ -5,6 +5,8 @@ import './index.css'
 
 import Homepage from './pages/Homepage.tsx'
 import App from './App.tsx'
+import MyProjects from './components/MyProjects.tsx'
+import Contact from './components/Contact.tsx'
 
 const router = createBrowserRouter([
   {
@@ -13,6 +15,18 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Homepage/>
+      },
+      {
+        path: "/about",
+        element: <h1>About</h1>
+      },
+      {
+        path: "/project",
+        element: <MyProjects/>
+      },
+      {
+        path: "/contact",
+        element: <Contact/>
       },
       {
         path: "*",
