@@ -1,0 +1,29 @@
+.sliderContainer {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: auto;
+    border: 2px solid #ddd;
+}
+
+.sliderLeft, .sliderRight {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    transition: width 0.2s ease-in-out;
+}
+
+.sliderLeft{
+    left: 0;
+    z-index: 2;
+}
+
+.sliderRight {
+    right: 0;
+    z-index: 1;
+}
