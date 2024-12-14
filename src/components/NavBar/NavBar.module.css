@@ -23,3 +23,13 @@ a {
 a:hover {
     color: #a5a3a3
 }
+
+.buttonLanguage {
+    background: none;
+    border: none;
+    cursor: pointer; 
+}
+
+.frenchFlag, .englishFlag {
+    height: 2em;
+}

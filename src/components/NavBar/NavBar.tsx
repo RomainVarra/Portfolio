@@ -1,3 +1,4 @@
+import { useTranslation } from "../../contexts/LangContext";
 import style from "./NavBar.module.css"
 import { NavLink, useNavigate } from "react-router-dom";
 function NavBar() {
@@ -5,6 +6,7 @@ function NavBar() {
     const handleClick = () => {
         navigate("/");
       };
+    const {language, toogleLanguage} = useTranslation();
     return(
         
         <section className={style.navBarStyle}>
@@ -24,6 +26,15 @@ function NavBar() {
             <li>
             <NavLink to={"/contact"}>Contact</NavLink>
             </li>
+           <li>
+  <button onClick={toogleLanguage} className={style.buttonLanguage} >
+    {language === "fr" ? (
+      <img src="/Images/france.png" alt="drapeau français" className={style.frenchFlag} />
+    ) : (
+      <img src="/Images/royaume-uni.png" alt="drapeau anglais" className={style.englishFlag}  />
+    )}
+  </button>
+</li>
         </ul>
         </section>
         
