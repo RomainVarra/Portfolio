@@ -2,7 +2,7 @@ import Contact from "../components/Contact";
 import ImagesSlider from "../components/ImagesSilder";
 import MyProjects from "../components/MyProjects";
 import leftImage from "../../public/Images/7c28c-josef1.jpg"
-import rightImage from "../../public/Images/Capture d'écran 2024-09-22 182220.png"
+import rightImage from "../../public/Images/7c28c-josef11.png"
 
 function Homepage () {
     return(
