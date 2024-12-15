@@ -1,0 +1,11 @@
+{
+    "NavBar": {
+"home":"Accueil",
+"about": "A propos",
+"contact": "Contactez-moi",
+"projects": "Mes projets"
+    },
+    "Homepage": {
+        "maintitle": "Bienvenue sur mon portfolio"
+    }
+}

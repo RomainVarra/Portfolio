@@ -1,6 +1,9 @@
+import {useTranslation} from "../contexts/LangContext"
+
 function MyProjects() {
+    const {translations} = useTranslation();
     return(
-        <h2>Some projects</h2>
+        <h2>{translations.NavBar.projects}</h2>
     )
 }
 

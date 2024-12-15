@@ -1,29 +1,35 @@
 import { createContext, ReactNode, useContext, useState } from "react";
+import fr from "../locales/fr.json";
+import en from "../locales/en.json";
+import type { TranslationsType,LanguageContextType } from "../lib/types";
 
-type LanguageType = {
-    language: string,
-    toogleLanguage: () => void;
-}
 
-const LangContext = createContext<LanguageType>({
-    language: "fr",
-    toogleLanguage: () => undefined,
+const translations: TranslationsType = { en, fr };
+
+const LangContext = createContext<LanguageContextType>({
+  language: "fr",
+  toggleLanguage: () => undefined,
+  translations: translations["fr"],
 });
 
-function LangProvider({children}: {children: ReactNode}){
-    const [language, setLanguage] = useState<string>("fr");
-    const toogleLanguage = () => {
-        setLanguage(language === "fr"  ? "en" : "fr")
-    }
-return(
-    <LangContext.Provider value={{language, toogleLanguage}}>
-        {children}
-    </LangContext.Provider>
-)
+function LangProvider({ children }: { children: ReactNode }) {
+  const [language, setLanguage] = useState<keyof TranslationsType>("fr");
+
+  const toggleLanguage = () => {
+    setLanguage((prevLanguage) => (prevLanguage === "fr" ? "en" : "fr"));
+  };
+
+  const value = {
+    language,
+    toggleLanguage,
+    translations: translations[language],
+  };
+
+  return <LangContext.Provider value={value}>{children}</LangContext.Provider>;
 }
+
+export const useTranslation = (): LanguageContextType => {
+  return useContext(LangContext);
+};
 
 export default LangProvider;
-
-export const useTranslation = () : LanguageType => {
-    return useContext(LangContext);
-}

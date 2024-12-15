@@ -6,7 +6,7 @@ function NavBar() {
     const handleClick = () => {
         navigate("/");
       };
-    const {language, toogleLanguage} = useTranslation();
+    const {language, toggleLanguage, translations} = useTranslation();
     return(
         
         <section className={style.navBarStyle}>
@@ -15,19 +15,19 @@ function NavBar() {
          />
         <ul className={style.navLink}>
             <li>
-            <NavLink to={"/"}>Accueil</NavLink>
+            <NavLink to={"/"}>{translations.NavBar.home}</NavLink>
             </li>
             <li>
-            <NavLink to={"/about"}>A propos</NavLink>
+            <NavLink to={"/about"}>{translations.NavBar.about}</NavLink>
             </li>
             <li>
-            <NavLink to={"/project"}>Projets</NavLink>
+            <NavLink to={"/project"}>{translations.NavBar.projects}</NavLink>
             </li>
             <li>
-            <NavLink to={"/contact"}>Contact</NavLink>
+            <NavLink to={"/contact"}>{translations.NavBar.contact}</NavLink>
             </li>
            <li>
-  <button onClick={toogleLanguage} className={style.buttonLanguage} >
+  <button onClick={toggleLanguage} className={style.buttonLanguage} >
     {language === "fr" ? (
       <img src="/Images/france.png" alt="drapeau français" className={style.frenchFlag} />
     ) : (

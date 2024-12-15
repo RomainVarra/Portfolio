@@ -7,6 +7,7 @@ import Homepage from './pages/Homepage.tsx'
 import App from './App.tsx'
 import MyProjects from './components/MyProjects.tsx'
 import Contact from './components/Contact.tsx'
+import About from './components/About.tsx'
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <h1>About</h1>
+        element: <About/>
       },
       {
         path: "/project",
