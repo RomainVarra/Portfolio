@@ -1,5 +1,6 @@
 import { useState } from "react";
 import style from "./ImagesSlider.module.css";
+import {useNavigate} from "react-router-dom";
 
 type ImageType = {
   leftImage: string;
@@ -16,6 +17,11 @@ function ImagesSlider({ leftImage, rightImage }: ImageType) {
     const percentage = (offsetX / rect.width) * 100;
     setMouse(percentage);
   };
+
+  const navigate = useNavigate();
+  const handleClick = () => {
+      navigate("/project");
+    };
 
   return (
     <div
@@ -37,8 +43,11 @@ function ImagesSlider({ leftImage, rightImage }: ImageType) {
           clipPath: `polygon(${mouse}% 0, 100% 0, 100% 100%, ${mouse}% 100%)`,
         }}
       ></div>
-      <div className={style.sliderText}>
-        {mouse < 50 ? <h1>Designer</h1> : <h1>&lt;Coder&gt;</h1>}
+      <div className={style.sliderTextLeft}>
+         <h2 onClick={handleClick}>&lt;Front-end&gt;</h2>
+      </div>
+      <div className={style.sliderTextRight}>
+      <h2 onClick={handleClick}>&lt;Back-end&gt;</h2>
       </div>
     </div>
   );
