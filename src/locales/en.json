@@ -7,5 +7,9 @@
     },
     "Homepage": {
         "maintitle": "Welcome to my Portfolio"
+    },
+    "MyProjects": {
+        "projectNature": "Project Nature",
+        "lang": "Skills"
     }
 }
