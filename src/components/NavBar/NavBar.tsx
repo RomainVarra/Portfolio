@@ -10,7 +10,7 @@ function NavBar() {
     const {language, toggleLanguage, translations} = useTranslation();
     const [menu, setMenu] = useState(false);
     const burgerMenu = () => setMenu(!menu);
-    const booleanMenu = () => setMenu(false);
+
     return(
         
         <section className={style.navBarStyle}>
@@ -21,22 +21,22 @@ function NavBar() {
         className={style.burgerButton}
         onClick={burgerMenu}
       >
-        <span className={style.burgerBar}></span>
-        <span className={style.burgerBar}></span>
-        <span className={style.burgerBar}></span>
+        <span className={style.burgerBar1}></span>
+        <span className={style.burgerBar2}></span>
+        <span className={style.burgerBar3}></span>
       </button>
-        <ul className={`${style.navLink} ${menu ? style.showMenu : style.hideMenu}`}>
+        <ul className={`${style.navLink} ${menu ? style.showMenu : style.hideMenu}`} >
             <li>
-            <NavLink to={"/"} onClick={booleanMenu}>{translations.NavBar.home}</NavLink>
+            <NavLink to={"/"}  >{translations.NavBar.home}</NavLink>
             </li>
             <li>
-            <NavLink to={"/about"} onClick={booleanMenu}>{translations.NavBar.about}</NavLink>
+            <NavLink to={"/about"}  >{translations.NavBar.about}</NavLink>
             </li>
             <li>
-            <NavLink to={"/project"} onClick={booleanMenu}>{translations.NavBar.projects}</NavLink>
+            <NavLink to={"/project"}  >{translations.NavBar.projects}</NavLink>
             </li>
             <li>
-            <NavLink to={"/contact"} onClick={booleanMenu}>{translations.NavBar.contact}</NavLink>
+            <NavLink to={"/contact"}  >{translations.NavBar.contact}</NavLink>
             </li>
            <li>
   <button onClick={toggleLanguage} className={style.buttonLanguage} >
