@@ -3,18 +3,12 @@
     width: 100%;
     max-width: 90%;
     height: 70vh;
-    overflow: hidden;
-    margin: auto;
   }
   
   .sliderLeft, .sliderRight {
     position: absolute;
     top: 0;
-    bottom: 0;
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
     transition: clip-path 0.2s ease-in-out;
   }
   
@@ -61,15 +55,15 @@ cursor: pointer;
 
   @media (max-width: 992px) {
     .sliderContainer {
-        height: 30vh;
+        height: 40vh;
     }
 
     .sliderTextLeft {
-        transform: translateX(-110%) translateY(-50%);
+        transform: translateX(-110%) translateY(-100%);
     }
 
     .sliderTextRight {
-        transform: translateX(10%) translateY(-50%);
+        transform: translateX(10%) translateY(-100%);
     }
 
     .sliderTextLeft, .sliderTextRight {

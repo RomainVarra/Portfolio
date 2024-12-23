@@ -24,32 +24,28 @@ function ImagesSlider({ leftImage, rightImage }: ImageType) {
     };
 
   return (
-    <div
+    <section
       className={style.sliderContainer}
       onMouseMove={handleMouse}
       onMouseLeave={() => setMouse(50)}
     >
-      <div
-        className={style.sliderLeft}
-        style={{
-          backgroundImage: `url(${leftImage})`,
-          clipPath: `polygon(0 0, ${mouse}% 0, ${mouse}% 100%, 0 100%)`,
-        }}
-      ></div>
-      <div
-        className={style.sliderRight}
-        style={{
-          backgroundImage: `url(${rightImage})`,
-          clipPath: `polygon(${mouse}% 0, 100% 0, 100% 100%, ${mouse}% 100%)`,
-        }}
-      ></div>
+      <img src={leftImage} alt="image avec style" 
+      className={style.sliderLeft}
+      style={{
+        clipPath: `polygon(0 0, ${100 - mouse}% 0, ${100 - mouse}% 100%, 0 100%)`,
+      }}/>
+      <img src={rightImage} alt="image sans style"
+      className={style.sliderRight}
+      style={{
+        clipPath: `polygon(${100 - mouse}% 0, 100% 0, 100% 100%, ${100 - mouse}% 100%)`,
+      }} />
       <div className={style.sliderTextLeft}>
          <h2 onClick={handleClick}>&lt;Front-end&gt;</h2>
       </div>
       <div className={style.sliderTextRight}>
       <h2 onClick={handleClick}>&lt;Back-end&gt;</h2>
       </div>
-    </div>
+    </section>
   );
 }
 
