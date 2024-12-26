@@ -2,15 +2,15 @@
     {
         "id": 1,
         "name": "Quizzzz",
-        "picture": "/Images/Images/ProjectsImages/Quizzzz.png",
+        "picture": "/Images/quizzz.png",
         "project": "Front-end",
-        "language":["Images/Images/ProjectsImages/html-5 (1).png","Images/Images/ProjectsImages/css-3 (1).png","Images/Images/ProjectsImages/js.png"] 
+        "language":["Images/html-5.png","Images/css-3.png","Images/js.png"] 
     },
     {
         "id": 2,
         "name": "meteo Apo",
-        "picture": "Images/Images/ProjectsImages/Capture d'écran 2024-12-23 224943.png",
+        "picture": "Images/meteoApo.png",
         "project": "Front-end",
-        "language":["Images/Images/ProjectsImages/html-5 (1).png","Images/Images/ProjectsImages/css-3 (1).png","Images/Images/ProjectsImages/icons8-réagir-40.png"]
+        "language":["Images/html-5.png","Images/css-3.png","Images/react.png"]
     }
 ]
