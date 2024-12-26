@@ -5,9 +5,10 @@ import './index.css'
 
 import Homepage from './pages/Homepage.tsx'
 import App from './App.tsx'
-import MyProjects from './components/MyProjects.tsx'
+import MyProjects from './components/MyProjects/MyProjects.tsx'
 import Contact from './components/Contact.tsx'
 import About from './components/About.tsx'
+import MyProjectsID from './components/MyProjects/MyProjectsId.tsx'
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/project",
         element: <MyProjects/>
+      },
+      {
+        path: "/projects/:id",
+        element: <MyProjectsID/>
       },
       {
         path: "/contact",

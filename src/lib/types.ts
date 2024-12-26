@@ -8,6 +8,9 @@ export type TranslationContent = {
   Homepage: {
     maintitle: string;
   };
+  MyProjects: {
+    projectNature: string;
+  }
 };
 
 export type TranslationsType = {

@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import {useTranslation} from "../contexts/LangContext"
-import ProjectsData from "../data/Projects.json"
+import {useTranslation} from "../../contexts/LangContext"
+import ProjectsData from "../../data/Projects.json"
 import style from "./myProjects.module.css"
+import { useNavigate } from "react-router-dom";
 
 type ProjectsType = {
     id: number,
@@ -14,6 +15,8 @@ type ProjectsType = {
 function MyProjects() {
     const {translations} = useTranslation();
     const [projects,setProjects] = useState<ProjectsType[]>([]);
+    const navigate = useNavigate();
+    const handleClick = (id:number) => navigate(`/projects/${id}`)
 
     useEffect(() => {
         setProjects(ProjectsData)
@@ -26,10 +29,12 @@ function MyProjects() {
 {projects.map((p) => (
     <section 
     key={p.id}
-    className={style.section} >
+    className={style.section} 
+    onClick={() => handleClick(p.id)}
+    >
     <h3 className={style.projectTitle}>{p.name}</h3>
     <img src={p.picture} alt={`Image du projet ${p.name}`} className={style.projectPicture} />
-    <p> Projet : {p.project}</p>
+    <p> {translations.MyProjects.projectNature} : {p.project}</p>
     <p>Languages : </p> 
     {p.language.map((lang) =>(
         <img src={lang} alt="icône du language utilisé" className={style.projectIcone} />
