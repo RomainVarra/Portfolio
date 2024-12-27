@@ -10,7 +10,15 @@ export type TranslationContent = {
   };
   MyProjects: {
     projectNature: string;
+    lang: string;
   }
+  MyProjectsDetails: {
+        details: string;
+        description: {
+          1 : string;
+          2:string;
+        } & Record<string, string>;
+    }
 };
 
 export type TranslationsType = {
@@ -23,3 +31,10 @@ export type LanguageContextType = {
     toggleLanguage: () => void;
     translations: TranslationContent;
 };
+export type ProjectsType = {
+  id: number,
+  name: string,
+  picture: string,
+  project: string,
+  language: string[] ;
+} 
