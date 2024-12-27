@@ -36,7 +36,7 @@ function MyProjects() {
     <img src={p.picture} alt={`Image du projet ${p.name}`} className={style.projectPicture} />
     <p> {translations.MyProjects.projectNature} : {p.project}</p>
     <p>{translations.MyProjects.lang} </p> 
-    {p.language.map((lang) =>(
+    {p.language.map((lang) => (
         <img src={lang} alt="icône du language utilisé" className={style.projectIcone} />
     ))}
     </section>

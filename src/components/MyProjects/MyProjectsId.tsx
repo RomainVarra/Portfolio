@@ -23,6 +23,9 @@ return(
 <img src={detailsProject?.picture} alt={`Details du projet ${detailsProject?.name}`} />
 <p>{translate.translations.MyProjectsDetails.description[`${id}`]}</p>
 <p> {translate.translations.MyProjects.projectNature} : {detailsProject?.project}</p>
+{detailsProject?.language.map((lang) => (
+    <img src={lang} alt="icône du language utilisé" />
+))}
 </section>
     </>
 )
