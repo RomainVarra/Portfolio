@@ -4,13 +4,17 @@
         "name": "Quizzzz",
         "picture": "/Images/quizzz.png",
         "project": "Front-end",
-        "language":["Images/html-5.png","Images/css-3.png","Images/js.png"] 
+        "language":["/Images/html-5.png","/Images/css-3.png","/Images/js.png"],
+        "link": "https://quizzzz-ava986b26-romain-varras-projects.vercel.app/",
+        "gitHub": "https://github.com/RomainVarra/QuizZzZ"
     },
     {
         "id": 2,
         "name": "meteo Apo",
-        "picture": "Images/meteoApo.png",
+        "picture": "/Images/meteoApo.png",
         "project": "Front-end",
-        "language":["Images/html-5.png","Images/css-3.png","Images/react.png"]
+        "language":["/Images/html-5.png","/Images/css-3.png","/Images/react.png"],
+        "link": "https://quizzzz-ava986b26-romain-varras-projects.vercel.app/",
+        "gitHub": "https://github.com/RomainVarra/QuizZzZ"
     }
 ]

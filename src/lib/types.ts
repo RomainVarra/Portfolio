@@ -11,6 +11,8 @@ export type TranslationContent = {
   MyProjects: {
     projectNature: string;
     lang: string;
+    link: string;
+    github: string;
   }
   MyProjectsDetails: {
         details: string;
@@ -37,4 +39,6 @@ export type ProjectsType = {
   picture: string,
   project: string,
   language: string[] ;
+  link: string,
+  gitHub: string,
 } 

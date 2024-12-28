@@ -10,7 +10,9 @@
     },
     "MyProjects": {
         "projectNature": "Project Nature",
-        "lang": "Skills"
+        "lang": "Skills",
+        "link": "Link to Website",
+        "github": "Link to GitHub"
     },
     "MyProjectsDetails": {
         "details": "Project details of",

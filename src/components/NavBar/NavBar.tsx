@@ -2,6 +2,7 @@ import { useTranslation } from "../../contexts/LangContext";
 import style from "./NavBar.module.css"
 import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
+
 function NavBar() {
     const navigate = useNavigate();
     const handleClick = () => {
@@ -14,7 +15,7 @@ function NavBar() {
     return(
         
         <section className={style.navBarStyle}>
-        <img className={style.myLogo} src="Images/logoPortfolio.webp" alt="Logo du site"
+        <img className={style.myLogo} src="/Images/logoPortfolio.webp" alt="Logo du site"
         onClick={handleClick}
          />
          <button

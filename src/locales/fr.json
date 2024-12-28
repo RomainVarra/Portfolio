@@ -10,12 +10,14 @@
     },
     "MyProjects":{
         "projectNature": "Nature du projet",
-        "lang": "Langages utilisés"
+        "lang": "Langages utilisés",
+        "link": "Lien vers le site",
+        "github": "Lien vers GitHub"
     },
     "MyProjectsDetails": {
         "details": "Details du projet",
         "description": {
-            "1": "Quiz a été mon premier projet à la Wild Code School. L'objectif était d'expérimenter avec JavaScript et la manipulation du DOM. Il a été réalisé en deux semaines avec mes collaborateurs, Matthieu et Victor. Votre objectif est clair : vaincre la Faucheuse. Vous avez trois vies pour répondre à 12 questions. Pouvez-vous la battre ?",
+            "1": "Quiz a été mon premier projet à la Wild Code School. L'objectif était d'expérimenter JavaScript et la manipulation du DOM. Il a été réalisé en deux semaines avec mes collègues, Matthieu et Victor. Votre objectif est clair : vaincre la Faucheuse. Vous avez trois vies pour répondre à 12 questions. Pouvez-vous la battre ?",
             "2":"MeteoApo est un projet réalisé en 36 heures, dans le cadre d’un Hackathon. Deux contraintes étaient imposées au départ : créer une application sur le thème de l’apocalypse et utiliser une API. Nous avons donc choisi de détourner les données d’une application météo (Weather Stack) pour en extraire des informations sur vos chances de survie en fonction de la ville sélectionnée. Prêt à calculer vos chances ?"
         } 
     }

@@ -31,9 +31,46 @@
     .projectIcone {
         width: 2em;
     }
+
+    .sectionId {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5em;
+        
+    }
+
+    .titleId {
+        font-size: 2.5em;
+        color: #333;
+        text-align: center;
+    }
+    .insideSection {
+display: flex;
+    }
+    .insideSectionRight {
+        text-align: center;
+
+    }
+
+    .imgID {
+        width: 50%;
+        margin: 1em 0 2em 0;
+        border-radius: 5%;
+    }
+
+    .description {
+        padding: 0 3em 0 3em;
+        text-align: center;
+        
+    }
+
+    .iconeId {
+        width: 2em;
+    }
     
     @media  screen and (min-width : 992px) {
         .section {
             width: 25%;
         }
+        
     }
