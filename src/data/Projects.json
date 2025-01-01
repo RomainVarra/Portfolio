@@ -34,5 +34,14 @@
         "language":["/Images/js.png"],
         "link": "",
         "gitHub": "https://github.com/RomainVarra/heracles-labour"
+    },
+    {
+        "id": 5,
+        "name": "MusicWild",
+        "picture": "/Images/musicwild.png",
+        "project": "Full-stack",
+        "language":["/Images/css-3.png","/Images/js.png","/Images/typescript.png","/Images/react.png","/Images/scrum.png"],
+        "link": "https://music-wild-r1ce9my2u-romain-varras-projects.vercel.app/",
+        "gitHub": "https://github.com/RomainVarra/MusicWild"
     }
 ]
