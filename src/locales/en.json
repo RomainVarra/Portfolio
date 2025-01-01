@@ -18,7 +18,8 @@
         "details": "Project details of",
         "description": {
             "1" : "Quizzz was my first project at the Wild Code School. The purpose was to experiment with JavaScript and DOM manipulation. It was completed in two weeks with my collaborators, Matthieu and Victor. Your objective is clear: defeat the Grim Reaper. You have three lives for 12 questions. Can you beat him?",
-            "2": "MeteoApo is a project completed in 36 hours as part of a Hackathon. Two requirements were set at the beginning: create an application on the theme of the apocalypse and use an API. We decided to repurpose the data from a weather application (Weather Stack) to calculate your survival chances based on the selected city. Ready to calculate your chances?"
+            "2" : "Tech'tastik is a SoloRush project completed in 24 hours. This exercise aimed to help us get familiar with React, focusing on component creation, props handling, and filter implementation. For this purpose, I decided to create an application offering quirky tech gadgets for sale. Looking for gift ideas? Check out the website!",
+            "3": "MeteoApo is a project completed in 36 hours as part of a Hackathon. Two requirements were set at the beginning: create an application on the theme of the apocalypse and use an API. We decided to repurpose the data from a weather application (Weather Stack) to calculate your survival chances based on the selected city. Ready to calculate your chances?"
         } 
     }
 }
