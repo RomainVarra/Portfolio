@@ -30,17 +30,19 @@ return(
 <img src={detailsProject?.picture} alt={`Details du projet ${detailsProject?.name}`} className={style.imgID} />
 <div className={style.insideSectionRight}>
 <p className={style.description}>{translate.translations.MyProjectsDetails.description[`${id}`]}</p>
-<p> {translate.translations.MyProjects.projectNature} : </p>
+<p className={style.projectNatureId}> {translate.translations.MyProjects.projectNature} : </p>
 <p>{detailsProject?.project}</p>
-<p>{translate.translations.MyProjects.lang} :</p>
+<p className={style.projectLangId}>{translate.translations.MyProjects.lang} :</p>
 {detailsProject?.language.map((lang) => (
     <img src={lang} alt="icône du language utilisé" className={style.iconeId} />
 ))}
 </div>
 </div>
 </section>
-<button onClick={() => handleClick(detailsProject?.link)}>{translate.translations.MyProjects.link}</button>
-<button onClick={() => handleClick(detailsProject?.gitHub)}>{translate.translations.MyProjects.github}</button>
+<section className={style.redirection}>
+<button className={style.webButton} onClick={() => handleClick(detailsProject?.link)}>{translate.translations.MyProjects.link}</button>
+<button className={style.gitHubButton} onClick={() => handleClick(detailsProject?.gitHub)}>{translate.translations.MyProjects.github}</button>
+</section>
     </>
 )
 }
