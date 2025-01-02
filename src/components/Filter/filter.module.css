@@ -1,0 +1,53 @@
+.sectionFilter {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+}
+
+.buttonSection {
+    background-color: white;
+    border: solid 1px black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 10em;
+    border-radius: 10px;
+    font-size: 1rem;
+    position: relative;
+    padding: 10px;
+}
+
+.buttonSection img {
+    margin-right: 1em;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.filterSection {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    border: 1px solid rgb(95, 88, 88);
+    width: 10em;
+    z-index: 10;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.itemsFilter {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.itemsFilter:hover {
+    background-color: #f0f0f0;
+}
+
+.logoFilter {
+    width: 2em;
+    margin-right: 1em;
+}
