@@ -1,19 +1,16 @@
 import style from "./filter.module.css";
 import { useState } from "react";
 import { useTranslation } from "../../contexts/LangContext";
-import type { FiltersType } from "../../lib/types";
+import type { FilterProps } from "../../lib/types";
 import options from "../../data/OptionsFilter.json"
 
-
-type FilterProps = {
-  onFilterChange: (filters: FiltersType) => void;
-};
 
 function Filter({ onFilterChange }: FilterProps) {
   const [languageFilter, setLanguageFilter] = useState<string | null>(null);
   const [projectFilter, setProjectFilter] = useState<string | null>(null);
   const [openMenu, setOpenMenu] = useState(false);
   const { translations } = useTranslation();
+
 
   const handleLanguageClick = (value: string) => {
     setLanguageFilter(value);

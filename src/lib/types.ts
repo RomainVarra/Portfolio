@@ -50,3 +50,7 @@ export type FiltersType = {
   language?: string;
   project?: string 
 }
+
+export type FilterProps = {
+  onFilterChange: (filters: FiltersType) => void;
+};
