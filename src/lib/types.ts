@@ -46,7 +46,7 @@ export type ProjectsType = {
   gitHub: string,
 } 
 
-export type filterType = {
-  value: string;
-  img: string;
+export type FiltersType = {
+  language?: string;
+  project?: string 
 }

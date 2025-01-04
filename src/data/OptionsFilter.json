@@ -1,0 +1,7 @@
+[
+    { "value": "HTML", "img": "/Images/html-5.png"},
+    { "value": "CSS", "img": "/Images/css-3.png" },
+    { "value": "JS", "img": "/Images/js.png" },
+    { "value": "Typescript", "img": "/Images/typescript.png"},
+    { "value": "React", "img": "/Images/react.png"}
+]

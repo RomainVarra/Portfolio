@@ -6,6 +6,7 @@ import { useTranslation } from "../../contexts/LangContext";
 import style from "./MyProjects.module.css"
 
 
+
 function MyProjectsID(){
     const [detailsProject, setDetailsProject] = useState<ProjectsType | null>(null);
     const {id} = useParams();

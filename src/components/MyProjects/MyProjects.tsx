@@ -3,30 +3,46 @@ import {useTranslation} from "../../contexts/LangContext"
 import ProjectsData from "../../data/Projects.json"
 import style from "./myProjects.module.css"
 import { useNavigate } from "react-router-dom";
-
-type ProjectsType = {
-    id: number,
-    name: string,
-    picture: string,
-    project: string,
-    language: string[]
-} 
+import type { ProjectsType } from "../../lib/types";
+import type { FiltersType } from "../../lib/types";
+import Filter from "../Filter/Filter";
 
 function MyProjects() {
     const {translations} = useTranslation();
-    const [projects,setProjects] = useState<ProjectsType[]>([]);
+    const [filteredProjects, setFilteredProjects] = useState<ProjectsType[]>([]);
+    const [filters, setFilters] = useState<FiltersType>({});
     const navigate = useNavigate();
     const handleClick = (id:number) => navigate(`/projects/${id}`)
 
     useEffect(() => {
-        setProjects(ProjectsData)
-    }, []);
+        
+        setFilteredProjects(ProjectsData); 
+      }, []);
+    
+      useEffect(() => {
+        const { language, project } = filters;
+
+        const filtered = ProjectsData.filter((p) => {
+          const matchesLanguage = !language || p.language.some((l) => l.includes(language.toLowerCase()));
+          const matchesProject = !project || p.project === project;
+          return matchesLanguage && matchesProject;
+        });
+
+        setFilteredProjects(filtered);
+      }, [filters]);
+    
+      const handleFilterChange = (newFilters: FiltersType) => {
+        setFilters(newFilters);
+      }
 
     return(
         <>
             <h2>{translations.NavBar.projects}</h2>
+    <section className={style.languageFilter}>
+<Filter onFilterChange = {handleFilterChange} />
+    </section>
             <div className={style.projectContainer}>
-{projects.map((p) => (
+{filteredProjects.map((p) => (
     <section 
     key={p.id}
     className={style.section} 
@@ -37,7 +53,7 @@ function MyProjects() {
     <p className={style.projectNatureId}> {translations.MyProjects.projectNature} :</p> <p>{p.project}</p>
     <p className={style.projectLangId}>{translations.MyProjects.lang} : </p> 
     {p.language.map((lang) => (
-        <img src={lang} alt="icône du language utilisé" className={style.projectIcone} />
+        <img src={lang} alt="icône du langage utilisé" className={style.projectIcone} />
     ))}
     </section>
 ))}
