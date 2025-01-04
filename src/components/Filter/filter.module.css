@@ -1,11 +1,18 @@
+.allFilters {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
 .sectionFilter {
     position: relative;
     display: inline-block;
     width: 200px;
 }
 
-.buttonSection {
+.buttonSection, .projectNatureFilter {
     background-color: white;
+    border-style: none;
     border: solid 1px black;
     cursor: pointer;
     display: flex;
@@ -15,6 +22,7 @@
     font-size: 1rem;
     position: relative;
     padding: 10px;
+    font-style: italic;
 }
 
 .buttonSection img {
@@ -35,6 +43,8 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
 }
+
+
 
 .itemsFilter {
     display: flex;

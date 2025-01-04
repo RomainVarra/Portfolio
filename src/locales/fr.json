@@ -23,5 +23,8 @@
             "4": "Heraclès Labour est un petit jeu inspiré des 12 travaux d'Hercule. L'objectif est de manipuler JavaScript pour pratiquer la programmation orientée objet. Aucune application ne sera déployée pour ce projet, mais le code est disponible sur GitHub. Prêt à affronter le lion de Némée ? Clonez le dépôt, puis lancez le jeu depuis le terminal de votre éditeur de code avec la commande suivante : node index.js",
             "5":"MusicWild est le deuxième projet que nous avons réalisé à la Wild Code School et le premier en Full-Stack. Ce travail d'équipe, mené avec Christine, Célio, Aurélien et moi-même, a été réalisé en suivant la méthodologie agile/scrum. Ce projet nous a permis d'explorer le développement côté serveur avec Express pour effectuer des appels à une API. MusicWild est un site de musique exploitant l'API Deezer, qui permet de naviguer entre plusieurs routes dynamiques pour afficher des extraits musicaux de votre choix (30 secondes par morceau). Alors, prêt(e) à vous détendre avec un peu de musique ?"
         } 
+    },
+    "Filter": {
+        "choose": "choisir un langage"
     }
 }

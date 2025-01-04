@@ -21,6 +21,9 @@ export type TranslationContent = {
           2:string;
         } & Record<string, string>;
     }
+Filter: {
+        choose: string;
+    }
 };
 
 export type TranslationsType = {
@@ -42,3 +45,8 @@ export type ProjectsType = {
   link: string,
   gitHub: string,
 } 
+
+export type filterType = {
+  value: string;
+  img: string;
+}
