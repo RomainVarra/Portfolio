@@ -3,5 +3,6 @@
     { "value": "CSS", "img": "/Images/css-3.png" },
     { "value": "JS", "img": "/Images/js.png" },
     { "value": "Typescript", "img": "/Images/typescript.png"},
-    { "value": "React", "img": "/Images/react.png"}
+    { "value": "React", "img": "/Images/react.png"},
+    { "value": "Express", "img": "/Images/express.png"}
 ]
