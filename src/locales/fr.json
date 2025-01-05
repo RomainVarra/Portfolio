@@ -1,18 +1,22 @@
 {
     "NavBar": {
 "home":"Accueil",
-"about": "A propos",
+"about": "A Propos",
 "contact": "Contactez-moi",
-"projects": "Mes projets"
+"projects": "Mes Projets"
     },
     "Homepage": {
-        "maintitle": "Bienvenue sur mon portfolio"
+        "maintitle": "Bienvenue sur mon Portfolio"
     },
     "MyProjects":{
         "projectNature": "Nature du projet",
         "lang": "Langages utilisés",
         "link": "Lien vers le site",
         "github": "Lien vers GitHub"
+    },
+    "About":{
+        "presentation": "Avec un parcours initial en diététique et une solide expérience dans l'accompagnement personnalisé, je me réinvente aujourd'hui en tant que développeur d'applications. Actuellement en reconversion pour obtenir le titre de Concepteur et Développeur d'Applications, je me spécialise en JavaScript et en développement full-stack. Passionné par les technologies web et les solutions innovantes, j’apprécie particulièrement la richesse de ce domaine qui mêle créativité, logique et évolution constante. Déjà familier avec les fondamentaux du développement web (HTML, CSS, JavaScript), je suis enthousiaste à l'idée d’approfondir mes connaissances et de relever de nouveaux défis techniques. Lorsque je ne code pas, j’aime explorer d’autres passions : lire, jouer au tennis et m’investir dans des activités qui nourrissent mon esprit d’analyse et ma curiosité.",
+        "portfolio": "Ce portfolio a été conçu pour vous présenter mes projets les plus aboutis. Entièrement codé en React, son code est disponible en open source sur mon GitHub pour les développeurs ou les curieux qui souhaiteraient l’explorer. Il s’adresse autant aux professionnels du développement qu’à ceux qui souhaitent simplement découvrir mon univers et mes réalisations. Conformément à la formation dispensée par la Wild Code School, chaque projet (ou presque) a été élaboré selon les meilleures pratiques : création d’un wireframe, prototypage avec Figma, et respect de la méthodologie Agile/Scrum. C’est une immense satisfaction personnelle de pouvoir partager ce travail avec vous. Si vous lisez ces quelques lignes, je tiens à vous dire un simple et sincère : « Merci ! ». 😊"
     },
     "MyProjectsDetails": {
         "details": "Details du projet",

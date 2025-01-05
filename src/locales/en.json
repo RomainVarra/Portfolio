@@ -2,8 +2,8 @@
     "NavBar": {
 "home":"Home",
 "about": "About",
-"contact": "Contact me",
-"projects": "My projects"
+"contact": "Contact Me",
+"projects": "My Projects"
     },
     "Homepage": {
         "maintitle": "Welcome to my Portfolio"
@@ -13,6 +13,10 @@
         "lang": "Skills",
         "link": "Link to Website",
         "github": "Link to GitHub"
+    },
+    "About":{
+        "presentation": "With an initial background in dietetics and solid experience in personalized support, I am now reinventing myself as an application developer. Currently retraining to obtain the Application Designer and Developer certification, I am specializing in JavaScript and full-stack development. Passionate about web technologies and innovative solutions, I particularly enjoy the richness of this field, which combines creativity, logic, and constant evolution. Already familiar with the fundamentals of web development (HTML, CSS, JavaScript), I am eager to deepen my knowledge and take on new technical challenges. When I'm not coding, I enjoy exploring other passions: reading, playing tennis, and engaging in activities that nurture my analytical mindset and curiosity.",
+        "portfolio": "This portfolio was created to showcase my most accomplished projects. Entirely coded in React, its code is available as open source on my GitHub for developers or anyone curious to explore it. It is designed for both professionals in development and those who simply want to discover my work and projects. In line with the training provided by the Wild Code School, each project (or nearly all) was developed following best practices: wireframe creation, prototyping with Figma, and adherence to Agile/Scrum methodologies. It's a great personal joy to be able to share this work with you. If you are reading these lines, I just want to say a simple and heartfelt: « Thank you ! » 😊"
     },
     "MyProjectsDetails": {
         "details": "Project details of",

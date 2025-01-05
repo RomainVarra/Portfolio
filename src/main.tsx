@@ -7,7 +7,7 @@ import Homepage from './pages/Homepage.tsx'
 import App from './App.tsx'
 import MyProjects from './components/MyProjects/MyProjects.tsx'
 import Contact from './components/Contact.tsx'
-import About from './components/About.tsx'
+import About from './components/About/About.tsx'
 import MyProjectsID from './components/MyProjects/MyProjectsId.tsx'
 
 const router = createBrowserRouter([

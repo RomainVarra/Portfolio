@@ -8,6 +8,10 @@ export type TranslationContent = {
   Homepage: {
     maintitle: string;
   };
+  About:{
+        presentation: string;
+        portfolio: string;
+    },
   MyProjects: {
     projectNature: string;
     lang: string;
@@ -54,3 +58,8 @@ export type FiltersType = {
 export type FilterProps = {
   onFilterChange: (filters: FiltersType) => void;
 };
+
+export type SkillsType = {
+  img: string;
+  description: string;
+}

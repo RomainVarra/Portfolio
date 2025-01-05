@@ -1,0 +1,50 @@
+[
+    {
+        "img": "/Images/html-5.png",
+        "description": "HTML"
+    },
+    {
+        "img": "/Images/css-3.png",
+        "description": "CSS"
+    },
+    {
+        "img": "/Images/js.png",
+        "description": "Javascript"
+    },
+    {
+        "img": "/Images/react.png",
+        "description": "React"
+    },
+    {
+        "img": "/Images/typescript.webp",
+        "description": "Typescript"
+    },
+    {
+        "img": "/Images/node-js.png",
+        "description": "Node.js"
+    },
+    {
+        "img": "/Images/mysql.png",
+        "description": "MySQL"
+    },
+    {
+        "img": "/Images/express.png",
+        "description": "Express"
+    },
+    {
+        "img": "/Images/scrum.png",
+        "description": "Agile/Scrum"
+    },
+    {
+        "img": "/Images/git.png",
+        "description": "Git"
+    },
+    {
+        "img": "/Images/github.png",
+        "description": "GitHub"
+    },
+    {
+        "img": "/Images/figma.png",
+        "description": "Figma"
+    }
+]

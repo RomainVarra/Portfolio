@@ -1,0 +1,72 @@
+.presentationSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.childPicture {
+    height: 15em;
+    border-radius: 50%;
+    margin-bottom: 2em;
+}
+
+.firstScript, .secondDescription {
+    text-align: center;
+    margin: 1em 2em 2em 2em;
+}
+
+.iconeSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.2em;
+}
+
+  .skillItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 5px solid ;
+    border-color: rgb(63, 94, 251) rgb(252, 70, 107) rgb(37, 207, 187) rgb(102, 126, 234);
+    border-radius: 10px;
+  }
+  
+  .skillItem img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  
+  .skillItem p {
+    font-size: 1em;
+    color: #333;
+  }
+@media screen and (min-width: 992px) {
+    .presentationSection {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .childPicture, .firstScript, .secondDescription, .iconeSection {
+        
+        object-fit: contain;
+        gap: 10px;
+        padding: 20px;
+        margin: 20px 30px 20px 30px;
+        font-size: 1.5em;
+        
+    }
+    .iconeSection {
+        width: 60%;
+    }
+    .secondDescription {
+        width: 40%;
+    }
+
+    .portfolioSection {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}

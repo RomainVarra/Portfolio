@@ -60,6 +60,7 @@
 
     .imgID {
         max-width: 90%;
+        object-fit: contain;
     }
     .insideSection {
         text-align: center;

@@ -13,7 +13,7 @@
         "name": "Tech'tastique",
         "picture": "/Images/techtastik.png",
         "project": "Front-end",
-        "language":["/Images/html-5.png","/Images/css-3.png","/Images/js.png","/Images/typescript.png","/Images/react.png"],
+        "language":["/Images/html-5.png","/Images/css-3.png","/Images/js.png","/Images/typescript.webp","/Images/react.png"],
         "link": "https://tech-tastique-i1z1bdjz8-romain-varras-projects.vercel.app/",
         "gitHub": "https://github.com/RomainVarra/TECH-TASTIQUE"
     },
@@ -22,7 +22,7 @@
         "name": "meteo Apo",
         "picture": "/Images/meteoApo.png",
         "project": "Front-end",
-        "language":["/Images/html-5.png","/Images/css-3.png","/Images/js.png","/Images/typescript.png","/Images/react.png"],
+        "language":["/Images/html-5.png","/Images/css-3.png","/Images/js.png","/Images/typescript.webp","/Images/react.png"],
         "link": "https://meteo-qtaa2wjkz-romain-varras-projects.vercel.app/",
         "gitHub": "https://github.com/RomainVarra/MeteoApo"
     },
@@ -40,7 +40,7 @@
         "name": "MusicWild",
         "picture": "/Images/musicwild.png",
         "project": "Full-stack",
-        "language":["/Images/css-3.png","/Images/js.png","/Images/typescript.png","/Images/react.png","/Images/express.png"],
+        "language":["/Images/css-3.png","/Images/js.png","/Images/typescript.webp","/Images/react.png","/Images/express.png"],
         "link": "https://music-wild-r1ce9my2u-romain-varras-projects.vercel.app/",
         "gitHub": "https://github.com/RomainVarra/MusicWild"
     }
