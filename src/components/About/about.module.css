@@ -20,14 +20,53 @@
     gap: 1.2em;
 }
 
-  .skillItem {
+.skillItem {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 5px solid ;
-    border-color: rgb(63, 94, 251) rgb(252, 70, 107) rgb(37, 207, 187) rgb(102, 126, 234);
+    position: relative;
     border-radius: 10px;
+    padding: 20px;
+    background: #fff; 
+    z-index: 1;
+    overflow: hidden; 
+  }
+  
+  .skillItem::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px; 
+    padding: 5px; 
+    background: linear-gradient(
+      90deg,
+      rgb(252, 70, 107),
+      rgb(252, 70, 107),
+      rgb(37, 207, 187),
+      rgb(37, 207, 187),
+      rgb(37, 207, 187),
+      rgb(37, 207, 187),
+      rgb(167, 179, 230)
+    );
+    z-index: -1; 
+    -webkit-mask: border-box;
+    mask: border-box;
+  }
+  
+  .skillItem::after {
+    content: '';
+    position: absolute;
+    top: 5px; 
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 10px; 
+    background: #fff;
+    z-index: -1; 
   }
   
   .skillItem img {
@@ -36,11 +75,22 @@
     margin-bottom: 10px;
     margin-top: 5px;
   }
+
   
-  .skillItem p {
-    font-size: 1em;
-    color: #333;
-  }
+    .skillDescription {
+        font-size: 1em;
+        background: linear-gradient(
+          90deg,
+          rgb(63, 94, 251),
+          rgb(252, 70, 107),
+          rgb(37, 207, 187),
+          rgb(102, 126, 234)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  
 @media screen and (min-width: 992px) {
     .presentationSection {
         display: flex;

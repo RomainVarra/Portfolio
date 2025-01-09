@@ -24,7 +24,7 @@ function About () {
                 {skills.map((i) => (
                 <div key={i.description} className={style.skillItem}>
                     <img src={i.img} alt={i.description} />
-                    <p>{i.description}</p>
+                    <p className={style.skillDescription}>{i.description}</p>
                 </div>
                 ))}
             </section>
