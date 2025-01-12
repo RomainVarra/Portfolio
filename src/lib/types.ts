@@ -17,14 +17,18 @@ export type TranslationContent = {
     lang: string;
     link: string;
     github: string;
-  }
+  },
   MyProjectsDetails: {
         details: string;
         description: {
           1 : string;
           2:string;
         } & Record<string, string>;
-    }
+    },
+Contact: {
+  Contact_me: string;
+  submit: string;
+},
 Filter: {
         choose: string;
     }
