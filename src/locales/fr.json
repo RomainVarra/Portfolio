@@ -21,6 +21,10 @@
     "Contact": {
         "Contact-me": "Vous avez une question ou souhaitez collaborer ? Laissez vos coordonnées et je vous recontacterai dès que possible."
     },
+    "ErrorPage": {
+        "error": "L'erreur. Le truc pas prévu. La page qui déconne. Le développeur a vraiment mal fait son travail !",
+        "goBackHome" : "Revenir à l'Accueil"
+    },
     "MyProjectsDetails": {
         "details": "Details du projet",
         "description": {

@@ -21,6 +21,10 @@
     "Contact": {
         "Contact-me": "Have a question or want to work together? Leave your details and I'll get back to you as soon as possible."
     },
+    "ErrorPage": {
+        "error": "The error. The unexpected thing. The page that's acting up. The developer really messed up is job !",
+        "goBackHome" : "Go back to Homepage"
+    },
     "MyProjectsDetails": {
         "details": "Project details of",
         "description": {

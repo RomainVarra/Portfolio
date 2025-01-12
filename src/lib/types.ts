@@ -28,6 +28,10 @@ export type TranslationContent = {
 Filter: {
         choose: string;
     }
+ErrorPage : {
+  error : string;
+  goBackHome: string;
+}
 };
 
 export type TranslationsType = {

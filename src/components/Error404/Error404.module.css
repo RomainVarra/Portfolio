@@ -1,0 +1,43 @@
+.errorSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.errorText {
+    font-size: 2em;
+    text-align: center;
+}
+
+.errorImg {
+    max-width: 90%;
+}
+
+.errorBtn {
+    border: 2px solid #ff4d4d; 
+    background-color: #ffe6e6; 
+    width: auto; 
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer; 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.errorLink {
+    text-decoration: none;
+    color: #ff4d4d; 
+    font-size: 1em; 
+    font-weight: bold; 
+    text-align: center; 
+}
+.errorBtn:hover {
+    background-color: #ff4d4d;
+}
+
+.errorLink:hover {
+    color: white;
+}
