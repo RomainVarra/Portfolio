@@ -8,9 +8,9 @@
     position: absolute;
     content: '';
     border-bottom: 16px solid #ff4d5a;
-    width: 9rem;
-    left: 4rem;
-    top: 2rem;
+    width: 10rem;
+    left: 1rem;
+    top: 1.8rem;
     z-index: -1;
 }
 
