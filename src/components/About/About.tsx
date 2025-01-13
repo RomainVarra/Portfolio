@@ -14,7 +14,7 @@ function About () {
 
     return(
         <>
-        <h1>{translations.NavBar.about}</h1>
+        <h1 className={style.Title}>{translations.NavBar.about}</h1>
         <section className={style.presentationSection}>
             <img src="/Images/photo-enfant.png" alt="photo du développeur enfant" className={style.childPicture} />
         <p className={style.firstScript}>{translations.About.presentation}</p>

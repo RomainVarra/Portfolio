@@ -1,3 +1,19 @@
+.Title {
+  position: relative;
+  font-size: 2.5rem;
+  z-index: 1;
+}
+
+.Title::before {
+    position: absolute;
+    content: '';
+    border-bottom: 16px solid #ff4d5a;
+    width: 9rem;
+    left: 4rem;
+    top: 2rem;
+    z-index: -1;
+}
+
 .presentationSection {
     display: flex;
     flex-direction: column;
@@ -53,7 +69,6 @@
       rgb(167, 179, 230)
     );
     z-index: -1; 
-    mask: border-box;
   }
   
   .skillItem::after {

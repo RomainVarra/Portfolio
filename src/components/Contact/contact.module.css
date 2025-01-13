@@ -1,3 +1,18 @@
+.Title {
+    position: relative;
+    font-size: 2.5rem;
+    z-index: 1;
+}
+
+.Title::before {
+    position: absolute;
+    content: '';
+    border-bottom: 16px solid #ff4d5a;
+    width: 12rem;
+    left: 6rem;
+    top: 2rem;
+    z-index: -1;
+}
 .contactSection {
     display: flex;
     justify-content: center;
@@ -28,6 +43,7 @@
 .contactFormSubmit {
     width: 5em;
 }
+
 
 @media  screen and (min-width: 992px) {
     .contactFormSubmitSection {

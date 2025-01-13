@@ -5,7 +5,7 @@ function Contact() {
     const {translations} = useTranslation();
     return(
         <>
-        <h1>{translations.NavBar.contact}</h1>
+        <h1 className={style.Title}>{translations.NavBar.contact}</h1>
         <section className={style.contactSection}>
             <p className={style.contactText}>{translations.Contact.Contact_me}</p>
             <form className={style.contactForm} action="">

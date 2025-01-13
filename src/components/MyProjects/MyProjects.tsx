@@ -37,7 +37,7 @@ function MyProjects() {
 
     return(
         <>
-            <h1>{translations.NavBar.projects}</h1>
+            <h1 className={style.Title}>{translations.NavBar.projects}</h1>
     <section className={style.languageFilter}>
 <Filter onFilterChange = {handleFilterChange} />
     </section>
