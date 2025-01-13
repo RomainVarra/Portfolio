@@ -1,7 +1,7 @@
 .footerSection {
     background-color: black;
     color: white;
-    height: 5em;
+    height: 6em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -13,13 +13,14 @@
     padding: 0 1em;
 }
 
-svg {
+.footerIcone {
     width: 2em;
     height: 2em;
     margin-left: 1em;
     color: white;
 }
 
-svg:hover {
+.footerIcone:hover {
     color: #a5a3a3;
 }
+

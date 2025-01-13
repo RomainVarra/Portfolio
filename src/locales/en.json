@@ -19,7 +19,7 @@
         "portfolio": "This portfolio was created to showcase my most accomplished projects. Entirely coded in React, its code is available as open source on my GitHub for developers or anyone curious to explore it. It is designed for both professionals in development and those who simply want to discover my work and projects. In line with the training provided by the Wild Code School, each project (or nearly all) was developed following best practices: wireframe creation, prototyping with Figma, and adherence to Agile/Scrum methodologies. It's a great personal joy to be able to share this work with you. If you are reading these lines, I just want to say a simple and heartfelt: « Thank you ! » 😊"
     },
     "Contact": {
-        "Contact_me": "Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.",
+        "Contact_me": "Do you have a question or want to collaborate? Send me a message through one of these links, and I will get back to you as soon as possible",
         "submit": "Submit"
     },
     "ErrorPage": {

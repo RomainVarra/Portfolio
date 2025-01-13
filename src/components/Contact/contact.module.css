@@ -22,39 +22,37 @@
     text-align: center;
     font-size: 1.2em;
     padding: 0 3em;
-}
-.contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.2em;
     margin-bottom: 2em;
 }
-.contactFormName, .contactFormEmail, .contactFormText {
-    border-radius: 5px;
+
+.iconeContactSection {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-bottom: 8em;
 }
-.contactFormText {
-    height: 3em;
-}
-.contactFormSubmitSection {
-    display: flex;
-    justify-content: right;
-}
-.contactFormSubmit {
+
+.contactIcone {
+    color: black;
     width: 5em;
+    height: 5em;
+    margin: 0 1em;
 }
 
+.contactIcone:hover {
+    color: #a5a3a3;
+}
 
+@media  screen and (min-width: 425px) {
+    .iconeContactSection {
+        margin-bottom: 20em;
+    }
+}
 @media  screen and (min-width: 992px) {
-    .contactFormSubmitSection {
-        display: flex;
-        justify-content: center;
+    .iconeContactSection {
+        margin-bottom: 25em;
     }
     .contactText {
-        padding: 0 11em;
-        font-size: 2em;
-    }
-    .contactFormName, .contactFormEmail, .contactFormText {
-        width: 30em;
+        margin-bottom: 4em;
     }
 }
