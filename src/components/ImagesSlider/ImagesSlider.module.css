@@ -3,6 +3,7 @@
     width: 100%;
     max-width: 90%;
     height: 70vh;
+    margin-bottom: 5em;
   }
   
   .sliderLeft, .sliderRight {

@@ -2,6 +2,7 @@ import './App.css'
 import NavBar from './components/NavBar/NavBar'
 import { Outlet } from 'react-router-dom'
 import LangProvider from './contexts/LangContext'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return(
@@ -13,6 +14,9 @@ function App() {
 <main>
   <Outlet/>
 </main>
+<footer>
+  <Footer/>
+</footer>
     </LangProvider>
     </>
   )
