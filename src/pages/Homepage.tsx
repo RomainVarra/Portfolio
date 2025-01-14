@@ -1,6 +1,6 @@
 import ImagesSlider from "../components/ImagesSlider/ImagesSilder";
-import leftImage from "../../public/Images/photoProfilPersonnalisé.jpg"
-import rightImage from "../../public/Images/PhotoProfil.jpg"
+import leftImage from "/Images/photoProfilPersonnalisé.jpg"
+import rightImage from "/Images/PhotoProfil.jpg"
 import { useTranslation } from "../contexts/LangContext";
 import style from "../components/NavBar/NavBar.module.css"
 
