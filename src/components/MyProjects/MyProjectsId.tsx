@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import projectsData from "../../data/Projects.json";
 import { ProjectsType } from "../../lib/types";
 import { useTranslation } from "../../contexts/LangContext";
-import style from "./myProjects.module.css"
+import style from "./myProjectDetails.module.css"
 
 
 

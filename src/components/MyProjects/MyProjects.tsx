@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import {useTranslation} from "../../contexts/LangContext"
 import ProjectsData from "../../data/Projects.json"
-import style from "./myProjects.module.css"
+import style from "./myProjectDetails.module.css"
 import { useNavigate } from "react-router-dom";
 import type { ProjectsType } from "../../lib/types";
 import type { FiltersType } from "../../lib/types";
