@@ -2,6 +2,7 @@
     position: relative;
     font-size: 2.5rem;
     z-index: 1;
+    margin-left: 1em;
 }
 
 .Title::before {

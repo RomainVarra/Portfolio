@@ -19,7 +19,7 @@
     },
     {
         "id": 3,
-        "name": "meteo Apo",
+        "name": "Meteo Apo",
         "picture": "/Images/meteoApo.png",
         "project": "Front-end",
         "language":["/Images/html-5.png","/Images/css-3.png","/Images/javascript.png","/Images/typescript.webp","/Images/react.png"],

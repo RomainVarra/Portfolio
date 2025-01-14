@@ -1,3 +1,8 @@
+.welcomeTitle {
+  margin: 1em 2em;
+  font-size: 2.5em;
+}
+
 .navBarStyle {
     display: flex;
     justify-content: space-between; 
