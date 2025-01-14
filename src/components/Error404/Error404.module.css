@@ -1,18 +1,3 @@
-.Title {
-    position: relative;
-    font-size: 2.5rem;
-    z-index: 1;
-}
-
-.Title::before {
-    position: absolute;
-    content: '';
-    border-bottom: 16px solid #ff4d5a;
-    width: 9rem;
-    left: 4rem;
-    top: 2rem;
-    z-index: -1;
-}
 .errorSection {
     display: flex;
     flex-wrap: wrap;
@@ -40,6 +25,8 @@
     display: inline-flex; 
     align-items: center; 
     justify-content: center; 
+    margin-bottom: 2em;
+    margin-left: 3em;
 }
 
 .errorLink {

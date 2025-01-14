@@ -1,5 +1,5 @@
 import Error404 from "../components/Error404/Error404";
-import style from "../components/Error404/error404.module.css"
+import style from "./page.module.css"
 
 function ErrorPage () {
     return (

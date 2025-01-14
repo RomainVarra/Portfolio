@@ -2,7 +2,7 @@ import ImagesSlider from "../components/ImagesSlider/ImagesSilder";
 import leftImage from "/Images/photoProfilPersonnalisé.jpg"
 import rightImage from "/Images/PhotoProfil.jpg"
 import { useTranslation } from "../contexts/LangContext";
-import style from "../components/NavBar/NavBar.module.css"
+import style from "./page.module.css"
 
 function Homepage () {
     const {translations} = useTranslation();
