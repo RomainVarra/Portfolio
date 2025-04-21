@@ -1,8 +1,10 @@
 [
     { "value": "HTML", "img": "/Images/html-5.png"},
     { "value": "CSS", "img": "/Images/css-3.png" },
-    { "value": "Javascript", "img": "/Images/javascript.png" },
+    { "value": "Tailwind", "img": "/Images/t.jpg"},
+    { "value": "Javascript", "img": "/Images/javascript.png"},
     { "value": "Typescript", "img": "/Images/typescript.webp"},
     { "value": "React", "img": "/Images/react.png"},
-    { "value": "Express", "img": "/Images/express.png"}
+    { "value": "Express", "img": "/Images/express.png"},
+    { "value": "Node", "img": "/Images/node-js.png"}
 ]

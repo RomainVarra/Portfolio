@@ -43,5 +43,23 @@
         "language":["/Images/css-3.png","/Images/javascript.png","/Images/typescript.webp","/Images/react.png","/Images/express.png"],
         "link": "https://music-wild-r1ce9my2u-romain-varras-projects.vercel.app/",
         "gitHub": "https://github.com/RomainVarra/MusicWild"
+    },
+    {
+        "id": 6,
+        "name": "Externatic",
+        "picture": "/Images/externatic.png",
+        "project": "Full-stack",
+        "language":["/Images/t.jpg","/Images/typescript.webp","/Images/react.png","/Images/express.png", "/Images/node-js.png"],
+        "link": "",
+        "gitHub": "https://github.com/RomainVarra/Externatic"
+    },
+    {
+        "id": 7,
+        "name": "RetroWild",
+        "picture": "/Images/retrowild.png",
+        "project": "Full-stack",
+        "language":["/Images/css-3.png","/Images/typescript.webp","/Images/react.png","/Images/express.png", "/Images/node-js.png"],
+        "link": "",
+        "gitHub": "https://github.com/RomainVarra/RetroWild"
     }
 ]
