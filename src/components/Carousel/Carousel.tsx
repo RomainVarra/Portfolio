@@ -1,9 +1,11 @@
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import  Logos  from "../../data/Skills.json";
-import { SkillsType } from "../../lib/types";
+import Logos from "../../data/Skills.json";
+import type { SkillsType } from "../../lib/types";
+import styles from "./Carousel.module.css";
 
-
+import "swiper/css";
+import "swiper/css/autoplay";
 
 const Carousel = () => {
   const swiperParams = {
@@ -26,59 +28,34 @@ const Carousel = () => {
   };
 
   const renderLogos = (logos: typeof Logos, prefix: string) => {
-    return logos.map((logo : SkillsType) => (
+    return logos.map((logo: SkillsType) => (
       <SwiperSlide key={`${prefix}-${logo.description}`}>
         <img
-          width="265"
-          height="122"
           src={logo.img}
           alt={logo.description}
+          className={styles.slideImage}
           loading="lazy"
-          srcSet={logo.img}
-          sizes="(max-width: 265px) 100vw, 265px"
         />
       </SwiperSlide>
     ));
   };
 
   return (
-    <>
-    <h2>Skills</h2>
-    <section
-      id="partenaires"
-      aria-label="Skills"
+    <section id="skills" aria-label="Skills" className={styles.carouselWrapper}>
+      <h2>Technologies</h2>
+      <Swiper {...swiperParams} className={styles.swiper}>
+        {renderLogos(Logos, "top")}
+      </Swiper>
+      <Swiper
+        {...{
+          ...swiperParams,
+          autoplay: { ...swiperParams.autoplay, reverseDirection: true },
+        }}
+        className={styles.swiper}
       >
-      <div>
-        <aside aria-label="Carrousel de logos des technologies utilisées">
-          <div>
-            <a href="#skip-slider-entreprises">
-              Contourner le slider des entreprises partenaires
-            </a>
-          </div>
-
-          <h2>Technologies</h2>
-
-          <div>
-            <Swiper {...swiperParams} className="partner-carousel">
-              {renderLogos(Logos, "top")}
-            </Swiper>
-
-            <Swiper
-              {...{
-                  ...swiperParams,
-                  autoplay: { ...swiperParams.autoplay, reverseDirection: true },
-                }}
-                className="partner-carousel"
-                >
-              {renderLogos([...Logos].reverse(), "bottom")}
-            </Swiper>
-          </div>
-
-          <div id="skip-slider-skills" />
-        </aside>
-      </div>
+        {renderLogos([...Logos].reverse(), "bottom")}
+      </Swiper>
     </section>
-                </>
   );
 };
 
