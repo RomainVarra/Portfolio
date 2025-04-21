@@ -2,7 +2,7 @@ import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Logos from "../../data/Skills.json";
 import type { SkillsType } from "../../lib/types";
-import styles from "./Carousel.module.css";
+import styles from "./carousel.module.css";
 
 import "swiper/css";
 import "swiper/css/autoplay";
