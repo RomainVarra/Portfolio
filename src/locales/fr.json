@@ -26,6 +26,9 @@
         "error": "L'erreur. Le truc pas prévu. La page qui déconne. Le développeur a vraiment mal fait son travail !",
         "goBackHome" : "Revenir à l'Accueil"
     },
+    "Carousel" : {
+        "skills" : "Skills"
+    },
     "MyProjectsDetails": {
         "details": "Details du projet",
         "description": {

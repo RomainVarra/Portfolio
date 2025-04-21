@@ -26,6 +26,9 @@
         "error": "The error. The unexpected thing. The page that's acting up. The developer really messed up is job !",
         "goBackHome" : "Go back to Homepage"
     },
+    "Carousel" : {
+        "skills" : "Skills"
+    },
     "MyProjectsDetails": {
         "details": "Project details of",
         "description": {

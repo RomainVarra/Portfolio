@@ -2,10 +2,11 @@ import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Logos from "../../data/Skills.json";
 import type { SkillsType } from "../../lib/types";
-import styles from "./Carousel.module.css";
+import styles from "./carousel.module.css";
 
 import "swiper/css";
 import "swiper/css/autoplay";
+import { useTranslation } from "../../contexts/LangContext";
 
 const Carousel = () => {
   const swiperParams = {
@@ -39,10 +40,11 @@ const Carousel = () => {
       </SwiperSlide>
     ));
   };
+  const {translations} = useTranslation();
 
   return (
     <section id="skills" aria-label="Skills" className={styles.carouselWrapper}>
-      <h2>Technologies</h2>
+      <h2 className={styles.carouselTitle}>{translations.Carousel.skills}</h2>
       <Swiper {...swiperParams} className={styles.swiper}>
         {renderLogos(Logos, "top")}
       </Swiper>

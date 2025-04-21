@@ -1,15 +1,7 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "strict": true,
-    "jsx": "react-jsx",
-    "typeRoots": ["./node_modules/@types", "./types"],
-    "types": []
-  },
-  "include": ["src", "types"]
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }
-
