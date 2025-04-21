@@ -36,7 +36,11 @@ ErrorPage : {
   error : string;
   goBackHome: string;
 }
+Carousel : {
+  skills: string;
+}
 };
+
 
 export type TranslationsType = {
   en: TranslationContent;
