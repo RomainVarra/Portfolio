@@ -5,7 +5,7 @@
     margin: 4em 0 2em 1em;
 }
 
-.mainTitleLatestWork:hover {
+.mainTitleLatestWork {
     position: absolute;
     content: '';
     border-bottom: 16px solid #ff4d5a;
@@ -34,3 +34,10 @@
 .latestWorkName {
 text-align: center;
 }
+
+@media (min-width: 900px) {
+    .latestWorkSection {
+        flex-direction: row;
+    }
+  }
+  
